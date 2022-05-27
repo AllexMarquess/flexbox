@@ -8,10 +8,15 @@
 
     <style>
         .flex-container{
-            max-width: 350px;
-            border: 1px solid;
-            margin-bottom: 10px;
+            max-width: 350px;   /* tamanho do container onde os item ficara dentro*/
+            border: 1px solid;  /* borda do item*/
+            margin-bottom: 25px; /* a margem de um item para o outro*/
             display: flex;
+            
+        }
+
+        .align-container{
+            align-items: center;
         }
 
         .item{
@@ -19,6 +24,9 @@
             color: aqua;
             font-size: 24px;
             text-align: center;
+            margin: 5px;
+            border-bottom: 2px solid wheat;
+
         }
 
         .center{
@@ -29,7 +37,7 @@
            align-self: flex-start;
         }
 
-        .end{
+        .end1{
             align-self: flex-end;
         }
 
@@ -45,10 +53,24 @@
             align-self: auto;
         }
 
-        
+
     </style>
 </head>
 <body>
     
+    <section class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">alex marques exemplos</div>
+        <div class="item auto">item 4</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item auto">alex marques exemplos</div>
+        <div class="item end1">item4</div>
+    </section>
+   
 </body>
 </html>
